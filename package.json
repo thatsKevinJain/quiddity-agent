@@ -1,7 +1,7 @@
 {
   "name": "quiddityagent",
   "version": "1.0.0",
-  "description": "Quiddity agent to pull, process and delete messages from quiddity queue systems",
+  "description": "Quiddity agent to pull, process and delete messages from quiddity queue system",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "uuid": "^7.0.3"
   }
 }

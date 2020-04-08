@@ -1,9 +1,18 @@
 require('dotenv').config()
+
+
+// export agent
 var Queue = require('./lib/queue.js')
 
-var sq = new Queue('SimpleQueue')
+var fifo = new Queue("fifo", { 
+	where: {
+		email: "moksh@gmail.com"
+	} 
+})	
 
-sq.execute((message, done) => {
+fifo.pull((message, done) => {
 	console.log(message)
 	done()
 })
+
+module.exports = Queue
