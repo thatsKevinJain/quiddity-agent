@@ -1,13 +1,24 @@
 {
   "name": "quiddity-agent",
   "version": "1.0.0",
-  "description": "Worker/Agent for Quiddity",
+  "description": "Lightweight agent/worker for Quiddity (Simple queue service that uses MongoDB to store messages)",
   "main": "index.js",
   "scripts": {
     "prestart": "npm install"
   },
-  "author": "Moksh Jain, Kevin Jain",
-  "license": "ISC",
+  "author": "Kevin Jain",
+  "license": "MIT",
+  "keywords": [
+    "agent", "worker", "queue", "mongodb"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thatsKevinJain/quiddity-agent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thatsKevinJain/quiddity-agent/issues"
+  },
+  "homepage": "https://github.com/thatsKevinJain/quiddity-agent#README",
   "dependencies": {
     "axios": "^0.19.2",
     "uuid": "^7.0.3"
