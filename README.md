@@ -31,20 +31,23 @@ npm install quiddity-agent
 #### Usage
 
 Intitalise the agent simply by creating a new instance -
+```js
+const Queue = require("quiddity-agent")
 ```
-const Queue = require('quiddity-agent')
 
+Create a new queue by passing the queueName -
+```js
 const queue = new Queue("testQueue")
 ```
 
 Push new messages into queue -
-```
+```js
 queue.push({ foo: "bar", ...})
 // Above returns a promise
 ```
 
 Pull new messages from queue -
-```
+```js
 queue.pull((message, done) => {
     // Do heavy work with "message"
     // Call done() to acknowledge job completion
@@ -62,10 +65,10 @@ You can also pass the following enviornment variables to configure the agent.
 
 - `QUIDDITY_URL`
 	- This is the base url of the quiddity server.
-  - To check out how to setup the server, to go this link [GitHub](https://github.com/thatsKevinJain/quiddity)
+  - To check out how to setup the server, to go this repo [GitHub](https://github.com/thatsKevinJain/quiddity)
 
 - `POLLING_INTERVAL`
-	- If the queue is empty and there are no messages left, the agent will poll for new messages at a set interval. 
+	- If the queue is empty and there are no messages left, the agent will poll for new messages at a fixed interval. 
 	- Developers can modify this __*polling time*__ to suit their requirements.
 
 ---
