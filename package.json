@@ -1,16 +1,15 @@
 {
-  "name": "quiddityagent",
+  "name": "quiddity-agent",
   "version": "1.0.0",
-  "description": "Quiddity agent to pull, process and delete messages from quiddity queue system",
+  "description": "Worker/Agent for Quiddity",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "npm install"
   },
   "author": "Moksh Jain, Kevin Jain",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
-    "dotenv": "^8.2.0",
     "uuid": "^7.0.3"
   }
 }

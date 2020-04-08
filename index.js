@@ -1,6 +1,3 @@
-require('dotenv').config()
-
-
 // export agent
 var Queue = require('./lib/queue.js')
 
