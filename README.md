@@ -62,7 +62,7 @@ queue.pull((message, done) => {
   // In case of an error, you can notify using
   done(new Error("Something went wrong..."))
 
-  // OR you can also throw a new Error with calling done()
+  // OR you can also throw a new Error without calling done()
   throw new Error("Something went wrong...")
 })
 ```
