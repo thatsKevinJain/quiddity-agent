@@ -1,6 +1,6 @@
 {
   "name": "quiddity-agent",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight agent/worker for Quiddity (Simple queue service that uses MongoDB to store messages)",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,10 @@
   "author": "Kevin Jain",
   "license": "MIT",
   "keywords": [
-    "agent", "worker", "queue", "mongodb"
+    "agent",
+    "worker",
+    "queue",
+    "mongodb"
   ],
   "repository": {
     "type": "git",
