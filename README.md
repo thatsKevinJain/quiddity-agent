@@ -55,6 +55,18 @@ queue.pull((message, done) => {
 })
 ```
 
+Error handling -
+```js
+queue.pull((message, done) => {
+
+  // In case of an error, you can notify using
+  done(new Error("Something went wrong..."))
+
+  // OR you can also throw a new Error with calling done()
+  throw new Error("Something went wrong...")
+})
+```
+
 ---
 #### Note -
 You can also pass the following enviornment variables to configure the agent.
