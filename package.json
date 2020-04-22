@@ -1,6 +1,6 @@
 {
   "name": "quiddity-agent",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Lightweight agent/worker for Quiddity (Simple queue service that uses MongoDB to store messages)",
   "main": "index.js",
   "scripts": {
