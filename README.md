@@ -28,7 +28,7 @@ npm install quiddity-agent
 ```
 
 ---
-#### Usage
+### Usage
 
 Intitalise the agent simply by creating a new instance -
 ```js
@@ -65,6 +65,21 @@ queue.pull((message, done) => {
   // OR you can also throw a new Error without calling done()
   throw new Error("Something went wrong...")
 })
+```
+
+---
+#### Extra functions -
+To delete all messages from the queue -
+```js
+queue.purge()
+// Returns the number of messages deleted
+```
+
+You can analyse the messages that end up in dead letter queue - 
+```js
+queue.fetchDeadQueue()
+// Returns those messages which were not successfully processed
+// after maximum number of receives by consumers
 ```
 
 ---
