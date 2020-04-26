@@ -85,6 +85,13 @@ const queue = new Queue("testQueue", {
 queue.where = {
     foo: { $gt: 10 }
 }
+
+queue.pull((message, done) => {
+  // All messages which satisfied the above criteria will return here //
+  console.log(message)
+
+  ...
+})
 ```
 
 To delete all messages from the queue -
