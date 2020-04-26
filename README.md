@@ -69,6 +69,24 @@ queue.pull((message, done) => {
 
 ---
 #### Extra functions -
+
+User can also pass a "where" clause which can filter queue messages based on query.
+All the MongoDB "find" query parameters are valid for this operation.
+
+Check the documentation to understand how you can use this feature. - [MongoDB find()](https://docs.mongodb.com/manual/reference/method/db.collection.find/#definition)
+
+```js
+// You can pass them as optional params during initialization
+const queue = new Queue("testQueue", {
+    foo: { $gt: 10 }
+})
+
+// OR you can set them as follows //
+queue.where = {
+    foo: { $gt: 10 }
+}
+```
+
 To delete all messages from the queue -
 ```js
 queue.purge()
