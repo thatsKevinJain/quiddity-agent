@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/thatsKevinJain/quiddity-agent#README",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "uuid": "^7.0.3"
   }
 }
